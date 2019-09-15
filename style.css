@@ -1,0 +1,860 @@
+@font-face {
+    font-family: "Philosopher";
+    src: url("fonts/Philosopher-Regular.ttf") format("ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Philosopher";
+    src: url("fonts/Philosopher-Italic.ttf") format("ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Philosopher";
+    src: url("fonts/Philosopher-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("fonts/Geometria.otf") format("otf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("fonts/Geometria-Italic.otf") format("otf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("fonts/Geometria-Medium.otf") format("otf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Geometria";
+    src: url("fonts/Geometria-HeavyItalic.otf") format("otf");
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+.main {
+    width: 1440px;
+    height: 800px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, #e6e6e6, #e6e6e6 50%, #ffffff 50%, #ffffff);
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    width: 600px;
+    height: 616px;
+    background-image: linear-gradient(26deg, #ffffff 0%, rgba(255,255,255,0) 100%);
+}
+
+.main__name {
+    position: absolute;
+    top: 324px;
+    left: 223px;
+    z-index: 6;
+    margin: 0;
+    padding: 0;
+    font-size: 140px;
+    font-family: "Philosopher", "serif";
+    font-weight: normal;
+    letter-spacing: 0.360em;
+    color: #ffffff;
+}
+
+.main__name-figure {
+    position: absolute;
+    top: 266px;
+    left: 347px;
+    z-index: 5;
+}
+
+.main__name-slogan {
+    position: absolute;
+    top: 482px;
+    left: 282px;
+    z-index: 5;
+    font-size: 9px;
+    font-family: "Philosopher", "serif";
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.5;
+    transform: rotate(-90deg);
+}
+
+.main__name-test {
+    position: absolute;
+    top: 390px;
+    left: -34px;
+    z-index: 5;
+    font-size: 12px;
+    font-family: "Geometria", "sans-serif";
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.07em;
+    opacity: 0.4;
+    transform: rotate(-90deg);
+}
+
+.main__litera {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 34px;
+    left: 34px;
+}
+
+.main__center-circle {
+    width: 160px;
+    height: 115px;
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    z-index: 5;
+    margin-left: -80px;
+    background-image: url(img/path30.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.main__center-circle::after {
+    content: "";
+    position: absolute;
+    left: -26px;
+    bottom: -6px;
+    z-index: 5;
+    width: 213px;
+    height: 10px;
+    background-color: #f6e94a;
+}
+
+.main__characters {
+    position: absolute;
+    top: 37px;
+    right: 410px;
+    font-family: "Tahoma", "sans-serif";
+    font-size: 80px;
+}
+
+.main__characters::after {
+    content: "E";
+    position: absolute;
+    z-index: 1;
+    top: 82px;
+    left: 175px;
+}
+
+.main__characters::before {
+    content: "G";
+    position: absolute;
+    z-index: 3;
+    top: 162px;
+    left: 85px;
+}
+
+.main__characters-mobile {
+    display: none;
+}
+
+.main__menu {
+    width: 54px;
+    height: 54px;
+    position: absolute;
+    top: 100px;
+    right: 80px;
+    background-image: url(img/path32.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.main__menu-burger {
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 26px;
+    left: 17px;
+    background-color: #000000;
+}
+
+.main__menu-burger::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    background-color: #000000;
+}
+
+.main__menu-burger::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    background-color: #000000;
+}
+
+.main__symbols {
+    width: 1040px;
+    height: 110px;
+    position: absolute;
+    bottom: -2px;
+    left: 192px;
+    overflow: hidden;
+    font-size: 25px;
+    font-family: "Philosopher", "serif";
+    font-weight: bold;
+}
+
+.main__symbol {
+    position: absolute;
+}
+
+.main__symbol--a {
+    top: 51px;
+    left: 75px;
+}
+
+.main__symbol--f {
+    top: 16px;
+    left: 140px;
+}
+
+.main__symbol--f-second {
+    top: 59px;
+    left: 204px;
+}
+
+.main__symbol--i {
+    top: 33px;
+    left: 263px;
+}
+
+.main__symbol--n {
+    top: 72px;
+    left: 328px;
+}
+
+.main__symbol--sign {
+    top: 90px;
+    left: 258px;
+}
+
+.main__symbol--a-second {
+    top: 29px;
+    right: 286px;
+}
+
+.main__symbol--sign-second {
+    top: 60px;
+    right: 242px;
+}
+
+.main__symbol--g {
+    top: 37px;
+    right: 183px;
+}
+
+.main__symbol--g-shadow {
+    top: 38px;
+    right: 185px;
+    opacity: 0.3;
+    font-size: 27px;
+}
+
+.main__symbol--e {
+    top: 64px;
+    right: 74px;
+}
+
+.main__symbol--sign-first {
+    top: 43px;
+    right: 7px;
+}
+
+.main__arrows {
+    width: 138px;
+    height: 383px;
+    position: absolute;
+    z-index: 4;
+    top: 256px;
+    right: 278px;
+    background-color: #f6e94a;
+}
+
+.main__arrow-left {
+    position: absolute;
+    left: -40px;
+    top: 227px;
+    width: 21px;
+    height: 37px;
+    cursor: pointer;
+  }
+
+.main__arrow-right {
+    position: absolute;
+    right: -40px;
+    top: 227px;
+    width: 21px;
+    height: 37px;
+    cursor: pointer;
+}
+
+.main__numbers {
+    position: absolute;
+    bottom: 37px;
+    left: 21px;
+    font-family: "Tahoma", "sans-serif";
+    font-size: 45px;
+    font-style: italic;
+}
+
+.main__numbers::before {
+    content: "";
+    position: absolute;
+    bottom: 6px;
+    right: -25px;
+    width: 17px;
+    height: 3px;
+    background-color: #000000;
+}
+
+.main__numbers::after {
+    content: "7";
+    position: absolute;
+    bottom: -17px;
+    right: -15px;
+    font-size: 17px;
+    font-family: "Tahoma", "sans-serif";
+    font-style: normal;
+}
+
+.main__slide-first {
+    position: absolute;
+    top: 97px;
+    left: 80px;
+    width: 800px;
+    height: 525px;
+}
+
+.main__slide-first::after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 525px;
+    top: 0;
+    left: 0;
+    background-color: rgba(246,234,76,0.8);
+}
+
+.main__slide-numbers {
+    position: absolute;
+    z-index: 1;
+    top: 82px;
+    left: 143px;
+    font-size: 14px;
+    font-family: "Tahoma", "sans-serif";
+    font-weight: normal;
+}
+
+.main__slide-numbers::after {
+    content: "(3)";
+    position: absolute;
+    z-index: 1;
+    top: 80px;
+    left: 0;
+}
+
+.main__slide-numbers::before {
+    content: "51";
+    position: absolute;
+    z-index: 1;
+    top: -55px;
+    left: 330px;
+    letter-spacing: 0.160em;
+    font-size: 28px;
+    font-family: "Tahoma", "sans-serif";
+    font-weight: normal;
+    transform: rotate(-90deg);
+}
+
+.main__image-first, 
+.main__image-second {
+    opacity: 0.5;
+}
+
+.main__slide-second {
+    position: absolute;
+    z-index: 2;
+    top: 184px;
+    right: 80px;
+    width: 860px;
+    height: 490px;
+}
+
+.main__slide-second::after {
+    content: "";
+    position: absolute;
+    width: 860px;
+    height: 490px;
+    top: 0;
+    left: 0;
+    background-color: rgba(246,234,76,0.8);
+}
+
+.main__ural {
+    position: absolute;
+    z-index: 1;
+    top: 32px;
+    left: 86px;
+    width: 98px;
+    height: 98px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.main__ural-word {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 24px;
+    letter-spacing: 0.160em;
+    font-size: 17px;
+    font-family: "Tahoma", "sans-serif";
+    font-style: normal;
+    color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+
+    .main {
+        width: 668px;
+        height: 668px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: none;
+        background-color: #f6e94a;
+        overflow: hidden;
+    }
+    
+    .main::before {
+        content: "";
+        height: 600px;
+        bottom: 68px;
+    }
+
+    .main__name {
+        position: absolute;
+        top: 590px;
+        left: 0;
+        z-index: 6;
+        font-size: 100px;
+        letter-spacing: 0.295em;
+    }
+    
+    .main__name-figure {
+        display: none; 
+    }
+
+    .main__name-slogan {
+        display: none;
+    }
+    
+    .main__name-test {
+        display: none;
+    }
+
+    .main__litera {
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 34px;
+        left: 34px;
+    }
+    
+    .main__center-circle {
+        width: 130px;
+        height: 90px;
+        position: absolute;
+        bottom: 0;
+        left: 540px;
+        z-index: 2;
+        margin-left: -65px;
+        background-image: url(img/path30.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    
+    .main__center-circle::after {
+        content: "";
+        display: none;
+    }
+    
+    .main__characters {
+        position: absolute;
+        top: 37px;
+        right: 410px;
+        font-family: "Tahoma", "sans-serif";
+        font-size: 80px;
+    }
+    
+    .main__characters::after {
+        content: "E";
+        position: absolute;
+        z-index: 1;
+        top: 82px;
+        left: 175px;
+    }
+    
+    .main__characters::before {
+        content: "G";
+        position: absolute;
+        z-index: 3;
+        top: 162px;
+        left: 85px;
+    }
+
+    .main__characters-mobile {
+        display: none;
+    }
+    
+    .main__menu {
+        top: 24px;
+        right: 34px;
+    }
+    
+    .main__symbols {
+        display: none;
+    }
+    
+    .main__arrows {
+        width: 668px;
+        height: 3px;
+        top: 600px;
+        right: 0;
+        background-color: #ffffff;
+    }
+    
+    .main__arrow-left {
+        left: 20px;
+        top: -440px;
+      }
+    
+    .main__arrow-right {
+        right: 20px;
+        top: -150px;
+    }
+    
+    .main__numbers {
+        bottom: 0;
+        left: 21px;
+        font-size: 145px;
+    }
+    
+    .main__numbers::before {
+        content: "";
+        position: absolute;
+        bottom: 260px;
+        right: -450px;
+        width: 730px;
+        height: 5px;
+        background-color: #000000;
+        transform: rotate(-70deg);
+    }
+    
+    .main__numbers::after {
+        display: none;
+    }
+    
+    .main__slide-first {
+        top: 97px;
+        left: 0;
+        width: 600px;
+        height: 325px;
+    }
+    
+    .main__slide-first::after {
+        width: 600px;
+        height: 325px;
+    }
+    
+    .main__slide-numbers {
+        position: absolute;
+    }
+    
+    .main__slide-numbers::before {
+        display: none;
+    }
+    
+    .main__image-first {
+        width: 600px;
+        height: 325px;
+    }
+
+    .main__image-second {
+        width: 660px;
+        height: 290px;
+    }
+    
+    .main__slide-second {
+        top: 284px;
+        right: 0;
+        width: 660px;
+        height: 290px;
+    }
+    
+    .main__slide-second::after {
+        width: 660px;
+        height: 290px;
+    }
+    
+    .main__ural {
+        top: 32px;
+        left: 386px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .main {
+        width: 320px;
+        height: 568px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: none;
+        background-color: #f6e94a;
+        overflow: hidden;
+    }
+    
+    .main::before {
+        display: none;
+    }
+
+    .main__name-slogan {
+        display: block;
+        top: 240px;
+        left: -20px;
+    }
+    
+    .main__name-test {
+        display: none;
+    }
+
+    .main__litera {
+        width: 23px;
+        height: 23px;
+        position: absolute;
+        top: 16px;
+        left: 20px;
+    }
+    
+    .main__center-circle {
+        display: block;
+        width: 110px;
+        height: 55px;
+        bottom: 0;
+        left: 105px;
+        margin-left: 0;
+    }
+    
+    .main__center-circle::after {
+        content: "";
+        display: none;
+    }
+    
+    .main__characters {
+        display: none;
+    }
+
+    .main__characters-mobile {
+        display: block;
+        position: absolute;
+        top: 206px;
+        right: 126px;
+        z-index: auto;
+        font-family: "Tahoma", "sans-serif";
+        font-size: 60px;
+    }
+    
+    .main__characters-mobile::after {
+        content: "A";
+        position: absolute;
+        z-index: 3;
+        top: 15px;
+        left: -80px;
+    }
+    
+    .main__characters-mobile::before {
+        content: "E";
+        position: absolute;
+        z-index: 4;
+        top: -80px;
+        left: 65px;
+    }
+
+    .main__menu {
+        top: 0;
+        right: 3px;
+        background-image: none;
+    }
+
+    .main__menu::before {
+        content: "";
+        position: absolute;
+        top: 45px;
+        left: -144px;
+        width: 97px;
+        height: 1.5px;
+        transform: rotate(-90deg);
+        background-color: #000000;
+    }
+
+    .main__menu::after {
+        content: "";
+        position: absolute;
+        top: 108px;
+        left: -97px;
+        width: 197px;
+        height: 1.5px;
+        transform: rotate(8deg);
+        background-color: #000000;
+    }
+    
+    .main__arrows {
+        width: 320px;
+        height: 20px;
+        top: 550px;
+        right: 0;
+        background-color: transparent;
+    }
+    
+    .main__arrow-left {
+        left: 20px;
+        top: -155px;
+      }
+    
+    .main__arrow-right {
+        right: 20px;
+        top: -155px;
+    }
+    
+    .main__numbers {
+        bottom: 25px;
+        left: 278px;
+        font-size: 20px;
+    }
+    
+    .main__numbers::before {
+        bottom: -256px;
+        right: -350px;
+        width: 730px;
+        height: 250px;
+        background-color: #f6e94a;
+        transform: rotate(-45deg);
+        z-index: -1;
+    }
+    
+    .main__slide-first {
+        top: 84px;
+        left: -44px;
+        width: 281px;
+        height: 185px;
+        z-index: auto;  
+    }
+    
+    .main__slide-first::after {
+        width: 281px;
+        height: 185px;
+        opacity: 0.8;
+    }
+    
+    .main__slide-numbers {
+        display: none;
+    }
+    
+    .main__image-first {
+        width: 281px;
+        height: 185px;
+        opacity: 1;
+    }
+
+    .main__image-second {
+        width: 560px;
+        height: 319px;
+        opacity: 1;
+    }
+    
+    .main__slide-second {
+        top: 249px;
+        right: -121px;
+        width: 560px;
+        height: 319px;
+        z-index: 1; 
+    }
+    
+    .main__slide-second::after {
+        width: 560px;
+        height: 319px;
+        opacity: 0.6;
+    }
+    
+    .main__ural {
+        display: none;
+    }
+
+    .main__symbols {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 292px;
+        left: 270px;
+        z-index: 6;
+        overflow: visible;
+    }
+    
+    .main__symbol {
+        display: none;
+    }
+    
+    .main__symbol--sign {
+        display: block;
+        top: 287px;
+        left: -227px;
+    }
+}
