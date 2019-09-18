@@ -370,6 +370,52 @@ body {
     height: 525px;
 }
 
+@keyframes change {
+    0% {
+        top: 97px;
+        left: 80px;
+    }
+    50% {
+        top: 57px;
+        left: 40px;
+    }
+    100% {
+        top: 184px;
+        left: 500px;
+        z-index: 2;
+    }
+}
+
+.main__slide-first--move {
+    animation-name: change;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes remove {
+    0% {
+        top: 184px;
+        left: 500px;
+    }
+    50% {
+        top: 57px;
+        left: 40px;
+    }
+    100% {
+        top: 97px;
+        left: 80px;
+        z-index: auto;  
+    }
+}
+
+.main__slide-first--remove {
+    animation-name: remove;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
 .main__slide-first::after {
     content: "";
     position: absolute;
@@ -423,6 +469,52 @@ body {
     right: 80px;
     width: 860px;
     height: 490px;
+}
+
+@keyframes changetwo {
+    0% {
+        top: 184px;
+        right: 80px;
+    }
+    50% {
+        top: 214px;
+        right: 110px;
+    }
+    100% {
+        top: 154px;
+        right: 500px;
+        z-index: auto;
+    }
+}
+
+.main__slide-second--move {
+    animation-name: changetwo;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes removetwo {
+    0% {
+        top: 154px;
+        right: 500px;
+    }
+    50% {
+        top: 214px;
+        right: 110px;
+    }
+    100% {
+        top: 184px;
+        right: 80px; 
+        z-index: 2; 
+    }
+}
+
+.main__slide-second--remove {
+    animation-name: removetwo;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
 }
 
 .main__slide-second::after {
@@ -606,6 +698,53 @@ body {
         width: 600px;
         height: 325px;
     }
+
+    @keyframes change {
+        0% {
+            top: 97px;
+            left: 0;
+        }
+        50% {
+            top: 57px;
+            left: -30px;
+        }
+        100% {
+            top: 250px;
+            left: 40px;
+            z-index: 2;
+        }
+    }
+    
+    .main__slide-first--move {
+        animation-name: change;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes remove {
+        0% {
+            top: 250px;
+            left: 40px;
+            z-index: 2;
+        }
+        50% {
+            top: 57px;
+            left: -30px;
+        }
+        100% {
+            top: 97px;
+            left: 0;
+            z-index: auto;
+        }
+    }
+    
+    .main__slide-first--remove {
+        animation-name: remove;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
     
     .main__slide-first::after {
         width: 600px;
@@ -635,6 +774,53 @@ body {
         right: 0;
         width: 660px;
         height: 290px;
+    }
+
+    @keyframes changetwo {
+        0% {
+            top: 284px;
+            right: 0;
+        }
+        50% {
+            top: 314px;
+            right: -50px;
+        }
+        100% {
+            top: 97px;
+            right: 20px;
+            z-index: auto;
+        }
+    }
+    
+    .main__slide-second--move {
+        animation-name: changetwo;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes removetwo {
+        0% {
+            top: 97px;
+            right: 20px;
+            z-index: auto;
+        }
+        50% {
+            top: 314px;
+            right: -50px;
+        }
+        100% {
+            top: 284px;
+            right: 0;
+            z-index: 2;
+        }
+    }
+    
+    .main__slide-second--remove {
+        animation-name: removetwo;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
     }
     
     .main__slide-second::after {
@@ -690,6 +876,7 @@ body {
         bottom: 0;
         left: 105px;
         margin-left: 0;
+        z-index: 5;
     }
     
     .main__center-circle::after {
@@ -796,6 +983,52 @@ body {
         height: 185px;
         z-index: auto;  
     }
+
+    @keyframes change {
+        0% {
+            top: 84px;
+            left: -44px;
+        }
+        50% {
+            top: 64px;
+            left: -64px;
+        }
+        100% {
+            top: 390px;
+            left: 40px;
+            z-index: 2;
+        }
+    }
+    
+    .main__slide-first--move {
+        animation-name: change;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes remove {
+        0% {
+            top: 390px;
+            left: 40px;
+        }
+        50% {
+            top: 64px;
+            left: -64px;
+        }
+        100% {
+            top: 84px;
+            left: -44px;
+            z-index: auto;
+        }
+    }
+    
+    .main__slide-first--remove {
+        animation-name: remove;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+    }
     
     .main__slide-first::after {
         width: 281px;
@@ -825,6 +1058,53 @@ body {
         width: 560px;
         height: 319px;
         z-index: 1; 
+    }
+
+    @keyframes changetwo {
+        0% {
+            top: 249px;
+            right: -121px;
+        }
+        50% {
+            top: 349px;
+            right: -121px;
+        }
+        100% {
+            top: 149px;
+            right: -121px;
+            z-index: auto;
+        }
+    }
+    
+    .main__slide-second--move {
+        animation-name: changetwo;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes removetwo {
+        0% {
+            top: 149px;
+            right: -121px;
+            z-index: auto;
+        }
+        50% {
+            top: 349px;
+            right: -121px;
+        }
+        100% {
+            top: 249px;
+            right: -121px;
+            z-index: 1; 
+        }
+    }
+    
+    .main__slide-second--remove {
+        animation-name: removetwo;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
     }
     
     .main__slide-second::after {

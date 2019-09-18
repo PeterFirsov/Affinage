@@ -81,6 +81,62 @@
           </svg>
       </div>
    </section>
+   <script>
+     var firstSlide = document.querySelector('.main__slide-first');
+     var secondSlide = document.querySelector('.main__slide-second');
 
+     var leftArrow = document.querySelector('.main__arrow-left');
+     var rightArrow = document.querySelector('.main__arrow-right');
+
+     var cordFirstX = firstSlide.style.top;
+     var cordFirstY = firstSlide.style.left;
+     var cordSecondX = secondSlide.style.top;
+     var cordSecondY = secondSlide.style.right;
+
+     leftArrow.addEventListener('click', function () {
+       if (firstSlide.classList.contains('main__slide-first--move')) {
+        firstSlide.style.top = window.getComputedStyle(firstSlide).top;
+        firstSlide.style.left = window.getComputedStyle(firstSlide).left;
+        secondSlide.style.top = window.getComputedStyle(secondSlide).top;
+        secondSlide.style.right = window.getComputedStyle(secondSlide).right;
+        firstSlide.classList.add('main__slide-first--remove');
+        secondSlide.classList.add('main__slide-second--remove');
+        firstSlide.classList.remove('main__slide-first--move');
+        secondSlide.classList.remove('main__slide-second--move');
+       } else {
+        firstSlide.classList.add('main__slide-first--move');
+        secondSlide.classList.add('main__slide-second--move');
+        firstSlide.classList.remove('main__slide-first--remove');
+        secondSlide.classList.remove('main__slide-second--remove');
+        firstSlide.style.top = cordFirstX;
+        firstSlide.style.left = cordFirstY;
+        secondSlide.style.top = cordSecondX;
+        secondSlide.style.right = cordSecondY;
+       }
+     });
+
+     rightArrow.addEventListener('click', function () {
+       if (firstSlide.classList.contains('main__slide-first--move')) {
+        firstSlide.style.top = window.getComputedStyle(firstSlide).top;
+        firstSlide.style.left = window.getComputedStyle(firstSlide).left;
+        secondSlide.style.top = window.getComputedStyle(secondSlide).top;
+        secondSlide.style.right = window.getComputedStyle(secondSlide).right;
+        firstSlide.classList.add('main__slide-first--remove');
+        secondSlide.classList.add('main__slide-second--remove');
+        firstSlide.classList.remove('main__slide-first--move');
+        secondSlide.classList.remove('main__slide-second--move');
+       } else {
+        firstSlide.classList.add('main__slide-first--move');
+        secondSlide.classList.add('main__slide-second--move');
+        firstSlide.classList.remove('main__slide-first--remove');
+        secondSlide.classList.remove('main__slide-second--remove');
+        firstSlide.style.top = cordFirstX;
+        firstSlide.style.left = cordFirstY;
+        secondSlide.style.top = cordSecondX;
+        secondSlide.style.right = cordSecondY;
+       }
+     });
+   
+   </script>
   </body>
 </html>
