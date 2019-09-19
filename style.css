@@ -391,6 +391,7 @@ body {
     animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes remove {
@@ -414,6 +415,7 @@ body {
     animation-duration: 2s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 .main__slide-first::after {
@@ -492,6 +494,7 @@ body {
     animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes removetwo {
@@ -515,6 +518,7 @@ body {
     animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 
 .main__slide-second::after {
@@ -720,6 +724,7 @@ body {
         animation-duration: 2s;
         animation-delay: 1s;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
 
     @keyframes remove {
@@ -744,6 +749,7 @@ body {
         animation-duration: 2s;
         animation-delay: 1s;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
     
     .main__slide-first::after {
@@ -797,6 +803,7 @@ body {
         animation-duration: 2s;
         animation-delay: 2s;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
 
     @keyframes removetwo {
@@ -821,6 +828,7 @@ body {
         animation-duration: 2s;
         animation-delay: 2s;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
     
     .main__slide-second::after {
@@ -1005,6 +1013,7 @@ body {
         animation-duration: 2s;
         animation-delay: 1s;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
 
     @keyframes remove {
@@ -1028,6 +1037,7 @@ body {
         animation-duration: 2s;
         animation-delay: 1s;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
     
     .main__slide-first::after {
@@ -1081,6 +1091,7 @@ body {
         animation-duration: 2s;
         animation-delay: 2s;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
 
     @keyframes removetwo {
@@ -1105,6 +1116,7 @@ body {
         animation-duration: 2s;
         animation-delay: 2s;
         animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
     }
     
     .main__slide-second::after {
